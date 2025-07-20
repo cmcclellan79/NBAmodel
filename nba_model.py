@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
-
+ 
 def get_player_id(name):
     # get players ID with the dataset if player is not found by full name in the data it will return a not found error message if it is found it shall return the player list index 
     player_list = [p for p in players.get_players() if p["full_name"] == name]
@@ -88,7 +88,8 @@ def train_model_for_position(df, features, target, position_label): #Function tr
 
 
 
-player_dict = {
+player_dict = { #demo players in the model 
+
     "Stephen Curry": "PG",
     "Klay Thompson": "SG",
     "LeBron James": "SF",
